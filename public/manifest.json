@@ -1,0 +1,38 @@
+{
+  "manifest_version": 3,
+
+  "name": "Nyaa Qbit Condtion",
+  "description": "Easy to find what you want to download",
+  "version": "1.0",
+
+  "options_ui": {
+    "page": "options.html"
+  },
+
+  "action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "content_scripts": [
+      {
+          "matches": ["*://*.nyaa.si/*","*://nyaa.si/*"],
+          "js": ["js/vendor.js", "js/content_script.js"]
+      }
+  ],
+  "background": {
+    "service_worker": "js/background.js"
+  },
+
+  "permissions": [
+    "storage"
+  ],
+
+  "host_permissions": [
+    "http://localhost:8080/",
+    "http://127.0.0.1:8080/",
+    "https://localhost:8080/",
+    "https://127.0.0.1:8080/",
+    "<all_urls>"
+  ]
+}
