@@ -2,7 +2,8 @@ import { TorrentElement } from "../types";
 
 export let config = {
   port: "8080",
-  refreshInterval: 3000
+  refreshInterval: 3000,
+  recent:100
 };
 export let infoCallback: { cb: Function; event: MouseEvent | null; info: any; recent:string|null } = {
   cb: () => { },

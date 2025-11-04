@@ -13,6 +13,8 @@ if you click the icon, it will show more information about the file
 
 ![detail info for downloaded magnetlink](./description/download_info.png)
 
+You can select text on the page and search recent torrents on the top-right corner to know which torrent's name contain the text, it is easy to know whether the resource you downloaded or not. `[version 1.0.2]`
+
 ## Install
 
 To install the chrome extension, download the `dist___.zip` from releases.

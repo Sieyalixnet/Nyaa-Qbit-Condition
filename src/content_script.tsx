@@ -1,7 +1,7 @@
 import { gettTorrentEmoji, mag_regex, State } from "./script/const_value";
 import { getTorrentInfo } from "./script/api";
 import { config, infoCallback, initLoadConfig, TorrentElementList } from "./script/link_value";
-import { initRoot } from "./script/react_pages";
+import { initRoot} from "./script/react_pages";
 
 
 function editElBasingOnState(el: HTMLAnchorElement, state: State, resInfo: any) {
@@ -22,7 +22,7 @@ function editElBasingOnState(el: HTMLAnchorElement, state: State, resInfo: any) 
       infoCallback.info = resInfo
       infoCallback.recent = resInfo.hash
       if (infoCallback.cb) infoCallback.cb(true)
-      //
+      //  
     }
   } else {
     el.style.cursor = "default"
